@@ -72,15 +72,13 @@
                 <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
                     data-bs-parent="#accordionExample">
                     <div class="accordion-body">
-                        <p>
-                            The web browser loads a web page, parses the HTML, and creates what is known as a
-                            Document Object Model (DOM) from the contents. The DOM presents a live view of the web
-                            page to your JavaScript code. The browser will then grab everything linked to the HTML,
-                            like images and CSS files. The CSS information comes from the CSS parser. The HTML and
-                            CSS are put together by the DOM to create the web page first. Then, the browsers'
-                            JavaScript engine loads JavaScript files and inline code but does not run the code
-                            immediately. It waits for the HTML and CSS to finish loading.
-                        </p>
+                        <p>At first the Web page will be loaded in Browser, then it will parse HTML and create DOM,
+                            which will show a live view of the page. After that, the browser will take all pages linked
+                            to the HTML file. CSS file will be one of them, which information comes from CSS
+                            parser.<br><br> Then DOM will put the HTML and CSS file together and a web page will be
+                            created and then JS file will start loading but after the HTML and CSS file finish loading.
+                            JS file will be loaded by Javascript engine load.Once everything is done, the JS file starts
+                            executing according to the order in the JS file. The order in the file is important.</p>
                     </div>
                 </div>
             </div>
@@ -94,14 +92,16 @@
                 <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
                     data-bs-parent="#accordionExample">
                     <div class="accordion-body">
-                        <p>This article will cover the concepts of localStorage and sessionStorage, the differences
-                            between the two, and the main methods used when working with them. The nice part about
-                            these storage options is that they are pretty straightforward to use once you learn the
-                            API. localStorage has no expiration date and will persist until you manually clear it
-                            out of your browser. This can include anything from clearing the cache to manually going
-                            in and deleting the data via the developer tools. On the other hand, sessionStorage will
-                            be removed once a page session ends via closing your browser or tab. Due to this
-                            limitation, sessionStorage is seldom used in comparison to localStorage.
+                        <p><b>LocalStorage:</b> Type of web storage object availabne in html 5 that allows storing data
+                            with no
+                            expiration date. Designed for storage that spans multiple windows and it lasts beyond the
+                            current session. It's not session based, need to be deleted via JS or manually client side
+                            reading only and less older browsers support. <br>
+                            <b>SessionStorage:</b> Type of web storage object available in html 5 that allows storing
+                            data for
+                            one session. Allows the user to carry out a single transaction but could be carrying out
+                            multiple transaction in defferent windows at the same time.It's session based and working
+                            per window or tab client side reading only less older browsers support.
                         </p>
                     </div>
                 </div>
